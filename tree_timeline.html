@@ -55,7 +55,7 @@
     var chart = new google.visualization.Timeline(container);
     var dataTable = new google.visualization.DataTable();
     var options = {'title':'Age Timeline',
-                     'width':1920,
+                     'width':1048,
                      'height':600};
 
     dataTable.addColumn({ type: 'string', id: 'President' });
@@ -82,25 +82,12 @@
 
   </head>
 <body>
-  <div class="w3-white w3-text-grey ">
-    <div class="w3-display-container">
-      <img src="./images/feather.avif" width="100%" height="300" alt="Bar">
-     </div>
-  </div>
-    <div class="w3-container w3-card-4 w3-padding-32 w3-white w3-left">
-      <!-- Summary -->
-      <div class="w3-card w3-white w3-margin-bottom">
-          <div class="w3-display-center w3-animate-top" id="chart_div"></div>
-       <!-- Summary -->  
-        </div>
-    </div>
-    <!-- <div class="w3-container w3-card w3-white"> -->
-    <!-- <div class="w3-container w3-card w3-white w3-padding-32 w3-border-cyan"> -->
-      <div class="w3-white w3-text-grey w3-card-4 w3-padding-32 w3-right w3-margin-right">
-        <div class="w3-display-container">
-      <div class="w3-display-center w3-animate-zoom" id="timeline" style="border: 1px solid #ccc"> </div>
-      <h2 class=w3-text-Cyan>Age Timeline</h2>
-    </div>
-    </div>
+    <table class="columns">
+        <tr>
+          <td><div id="chart_div" style="border: 1px solid #ccc"></div></td>
+          <td><div id="timeline" style="border: 1px solid #ccc"></div></td>
+        </tr>
+      </table>
+  
 </body>
 </html>
