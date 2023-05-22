@@ -26,20 +26,10 @@
         data.addColumn('string', 'ToolTip');
         // For each orgchart box, provide the name, manager, and tooltip to show.
         data.addRows([
-          [{'v':'Subramonion Achari', 'f':'<div class=w3-grey>Subramonion Achari</div><div class=w3-black >Father</div>'},'', 'Father , Grandpa'],
-          [{'v':'Krishna Kumar', 'f':'<a href="./krishna.html"><img src="./krishna.jpg" style="width:100%"><div class=w3-grey>Krishna Kumar</div><div class=w3-black>Son</div></a>'},'Saraswathy Ammal', 'Son'],
-           [{'v':'Saraswathy Ammal', 'f':'<div class=w3-grey>Saraswathy Ammal</div><div class=w3-black>spouse</div>'},'Subramonion Achari', 'Mom, Grandma'],
-        [{'v':'Uma', 'f':'<div class=w3-grey>Uma Devi</div><div class=w3-black>Daughter</div>'},'Saraswathy Ammal', 'Daughter'],
-        [{'v':'Chandru', 'f':'<div class=w3-grey>Rama Chandran</div><div class=w3-black>Son-in-Law</div>'},'Uma', 'Son-in-Law'],
-        [{'v':'Priya', 'f':'<div class=w3-grey>Priya </div><div class=w3-black>Grand Daughter</div>'},'Chandru', 'Grand Daughter'],
-        [{'v':'Arjun', 'f':'<div class=w3-grey>Arjun</div><div class=w3-black>Grand Son</div>'},'Chandru', 'Grand Son'],
-           [{'v':'Gayathri', 'f':'<div class=w3-grey>Gayathri</div><div class=w3-black>Daughter</div>'},'Saraswathy Ammal', 'Daughter'],
-           [{'v':'Murali', 'f':'<div class=w3-grey>KSB Murali</div><div class=w3-black>Son-in-Law</div>'},'Gayathri', 'Son-in-Law'],
-           [{'v':'Navaneetha', 'f':'<div class=w3-grey>Navaneetha KSB </div><div class=w3-black>Grand Daughter</div>'},'Murali', 'Grand Daughter'],
-        [{'v':'Kichu', 'f':'<div class=w3-grey>Harikrishnan KSB</div><div class=w3-black>Grand Son</div>'},'Murali', 'Grand Son'],
-           [{'v':'Kusum Singh', 'f':'<div class=w3-grey>Kusum Singh</div><div class=w3-black>Daughter-in-Law</div>'},'Krishna Kumar', 'Daughter'],
-           [{'v':'Rudransh Krishna', 'f':'<div class=w3-grey>Rudransh Krishna</div><div class=w3-black>Grand Son</div>'},'Kusum Singh', 'Grand Son'],
-           [{'v':'Rishita Krishna', 'f':'<div class=w3-grey>Rishita Krishna</div><div class=w3-black>Grand Son</div>'},'Kusum Singh', 'Grand Daughter']
+          [{'v':'Krishna Kumar', 'f':'<img src="./krishna.jpg" style="width:100%"><div class=w3-grey>Krishna Kumar</div><div class=w3-black>Son</div>'},'Krishna Kumar', 'Father'],
+          [{'v':'Kusum Singh', 'f':'<div class=w3-grey>Kusum Singh</div><div class=w3-black>Daughter-in-Law</div>'},'Krishna Kumar', 'Daughter'],
+          [{'v':'Rudransh Krishna', 'f':'<div class=w3-grey>Rudransh Krishna</div><div class=w3-black>Grand Son</div>'},'Kusum Singh', 'Grand Son'],
+          [{'v':'Rishita Krishna', 'f':'<div class=w3-grey>Rishita Krishna</div><div class=w3-black>Grand Son</div>'},'Kusum Singh', 'Grand Daughter']
         ]);
         // Create the chart.
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
@@ -66,16 +56,6 @@
     dataTable.addColumn({ type: 'date', id: 'Start' });
     dataTable.addColumn({ type: 'date', id: 'End' });
     dataTable.addRows([
-      [ 'Subramonian Achari', new Date("1948-06-01"), new Date() ],
-      [ 'Saraswathy Ammal',      new Date("1954-06-04"),  new Date() ],
-      [ 'Uma Devi',      new Date("1974-09-25"),  new Date() ],
-      [ 'RamaChandran',      new Date("1971-07-24"),  new Date() ],
-      [ 'Vishnu Priya',      new Date("2000-06-02"),  new Date() ],
-      [ 'Arjun',      new Date("2008-06-08"),  new Date() ],
-      [ 'Gayathri',      new Date("1978-08-10"),  new Date() ],
-      [ 'K BalaMurali',      new Date("1969-06-07"),  new Date() ],
-      [ 'KSB Navaneetha',      new Date("2000-11-09"),  new Date() ],
-      [ 'KSB HariKrishnan',      new Date("2005-09-10"),  new Date() ],
       [ 'Krishna Kumar',  new Date("1982-06-14"),  new Date() ],
       [ 'Kusum Singh',      new Date("1988-01-31"),  new Date() ],
       [ 'Rudransh Krishna',      new Date("2013-06-19"),  new Date() ],
